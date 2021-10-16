@@ -1,0 +1,26 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+  
+}
+
+table{
+    margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+  margin-right: 1.6rem;
+  margin-left: 1.6rem;
+
+}
+
+h3{
+  text-align: center;
+}
+
+#select_servicio{
+margin-right: 0.5rem;
+
+}
+
+#search_cedula{
+  margin-right: 0.5rem;
+  
+  }
