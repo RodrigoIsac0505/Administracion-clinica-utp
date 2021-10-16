@@ -8,7 +8,7 @@
 
      <!-- Bootstrap CSS -->
      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-     <link rel="stylesheet" href="../CSS/1.CSS">
+     <link rel="stylesheet" href="../Css/css.css">
 </head>
 <body>
     <header>
@@ -51,7 +51,7 @@
       </table>
     </div>
 
-    <button type="button" onclick="window.location.href='P_RegistroMedico.html'">Registro Medico</button>
+    <button type="button" onclick="window.location.href='P_RegistroMedico.php'">Registro Medico</button>
    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
