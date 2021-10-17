@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="../resources/img/logo_utp.png"/>
+	<title>Calendario de Eventos/ Sistema de Reservacion de Eventos UTP</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<script src="../resources/js/jquery.min.js"></script>
+	<script src="../resources/js/moment.min.js"></script>
+	<script src="../resources/js/fullcalendar.min.js"></script>
+	<script src="../resources/js/es.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<link href="../resources/css/fullcalendar.min.css" rel="stylesheet">
+	<link href="../resources/css/estilos.css" rel="stylesheet">
+</head>
+<body>
+    
+<!--Barra de navegacion -->
+<nav class="navbar navbar-expand-md sticky-top" style="background-color: #68086c;">
+	<div class="container-fluid">
+	  <a class="navbar-brand"><img src=../resources/img/logo_utp.png width="60px" height="60px"></a>
+		<h6 style="color: white">Universidad Tecnologica de Panama<br><small>Sistema de Reservacion de eventos Campus Central Victor Levi Sasso</small></h6>
+	   <button class="navbar-toggler" type="button" data-toggle="collapse"
+		 data-target="#navbarResponsive">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		  <div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+			  <li class="nav-item active">
+			   <a class="nav-link" style="color: white" href=""></a>
+			  </li>
+			  <li class="nav-item active">
+			   <a class="nav-link" style="color: white" href=""></a>
+			  </li>
+			  <li class="nav-item active">
+			   <a class="nav-link" style="color: white" href=""></a>
+			  </li>
+			  <li class="nav-item active">
+				<a class="nav-link" style="color: white" href=""></a>
+			  </li>
+			</ul>
+		</div>
+	</div>
+  </nav>
+<br>
+<div class="container-fluid text-center">
+<h3 class="text-center">Calendario</h3>
+    <div class="container-fluid">
+	    <div class="row">
+            <div class="col"></div>
+		    <div class ="col-7"><div id ="CalendarioWeb"></div></div>
+			<div class="col"></div>
+      </div>
+	</div><br>
+	<a class="btn btn-primary" href="bandeja_entrada.html" role="button">Regresar a Bandeja</a>	<br>
+</div>
+<script>
+   $(document).ready(function(){
+	   $('#CalendarioWeb').fullCalendar({
+		   header:{
+			   left:'today,prev,next',
+			   center:'title',
+			   right:'month,basicWeek,basicDay,agendaWeek,agendaDay'
+		   },
+		   dayClick:function(date,jsEvent,view){
+              $("#exampleModal").modal();
+		   },
+		   events:[
+			   {
+				   title: 'Evento Ejemplo 1',
+				   start:'2019-10-31',
+				   end: '2019-10-31'
+			   },
+			   {
+				   title: 'Evento Ejemplo 1',
+				   start:'2019-11-4',
+				   end: '2019-11-6'
+			   },
+			   {
+				   title: 'Evento Ejemplo 1',
+				   start:'2019-11-10 T12:30',
+				   allDay:false
+			   }
+		   ]
+	   });
+   });
+</script>	  
+	  <!-- Modal -->
+	  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="exampleModalLabel">Eventos del dia</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+			  *Digamos que aqui cargaran los eventos del dia*
+			  <br>
+			  *Evento 1*
+			  <br>
+			  *Evento 2*
+			  <br>
+			  *Evento 3*
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-warning" onclick="location.href='proceso1.html';">Modificar</button>
+				<button type="button" class="btn btn-danger">Borrar</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+			</div>
+		  </div>
+		</div>
+	  </div>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="../resources/img/logo_utp.png"/>
+	<title>Bienvenidos / Sistema de Reservacion de Eventos UTP</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="../resources/css/estilos.css" rel="stylesheet">
+</head>
+<body>
+
+<!--Barra de navegacion -->
+<nav class="navbar navbar-expand-md sticky-top" style="background-color: #68086c;">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="../index.html"><img src=../resources/img/logo_utp.png width="60px" height="60px"></a>
+		<h6 style="color: white">Universidad Tecnologica de Panama<br><small>Sistema de Reservacion de eventos Campus Central Victor Levi Sasso</small></h6>
+	   <button class="navbar-toggler" type="button" data-toggle="collapse"
+		 data-target="#navbarResponsive">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		  <div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+			  <li class="nav-item active">
+			   <a class="nav-link" style="color: white" href="calendario.html">Calendario</a>
+			  </li>
+			  <li class="nav-item active">
+			   <a class="nav-link" style="color: white" href="solicitud_reserva.html">Reservar eventos</a>
+			  </li>
+			  <li class="nav-item active">
+			   <a class="nav-link" style="color: white" href="../index.html">Cerrar Sesión</a>
+			  </li>
+			  <li class="nav-item active">
+				<a class="nav-link" style="color: white" href="#"></a>
+			  </li>
+			  <li class="nav-item active">
+				<a class="btn btn-default shadow" href="#" role="button"></a>
+			  </li>
+			</ul>
+		</div>
+	</div>
+  </nav>
+
+<!-- Formulario de reservacion de eventos -->
+<div class="container">
+  <div class="col clearfix">
+        <span class="float-center">
+            <br>
+            <h3>Formulario para reservación de eventos en la Facultad de Sistemas (Mobiliarios y Servicios)</h3>
+              <form action="solicitud_reserva1.html" method="post" id="usrform">
+                
+				<div id="main" class="text-center">
+                  
+                        <div id="left">
+                        <fieldset>
+                        <legend>Presentación</legend>
+                          <ul>
+                            <h>Pódium:</h>
+                            <input type="number" name="podium" min="1" max="5">
+                            <br><br>
+                            <h>Bandera:</h>
+                            <input type="number" name="bandera" min="1" max="5">
+                            <br><br>
+                            <h>Estandarte U.T.P.:</h>
+                            <input type="number" name="estandarte" min="1" max="5">
+                            <br><br>
+                            <h>Trípodes:</h>
+                            <input type="number" name="tripode" min="1" max="5">
+                            <br><br>
+                            <h>Bases y Bordones:</h>
+                            <input type="number" name="bases" min="1" max="5">
+                            <br><br>
+                            <h>Telas para Cerchas:</h>
+                            <input type="number" name="telas" min="1" max="5">
+                          </ul>
+                        </fieldset>
+                  
+                        <br>
+                  
+                        <fieldset>
+                        <legend>Varios</legend>
+                          <ul>
+                            <h>Sillas Apilables (acolchadas):</h>
+                            <input type="number" name="acolchadas" min="1" max="5">
+                            <br><br>
+                            <h>Sillas Apilables (Plásticas):</h>
+                            <input type="number" name="plasticas" min="1" max="5">
+                            <br><br>
+                            <h>Toldas Pequeñas:</h>
+                            <input type="number" name="toldasp" min="1" max="5">
+                            <br><br>
+                            <h>Toldas Medianas:</h>
+                            <input type="number" name="toldasm" min="1" max="5">
+                            <br><br>
+                            <h>Toldas Grandes:</h>
+                            <input type="number" name="toldasg" min="1" max="5">
+                            <br><br>
+                            <h>Tinas:</h>
+                            <input type="number" name="tinas" min="1" max="5">
+                            <br><br>
+                            <h>Cerchas de Aluminio:</h>
+                            <input type="number" name="cerchasalum" min="1" max="5">
+                          </ul>
+                        </fieldset>
+                  
+                        <br>
+                  
+                        <fieldset>
+                        <legend>Mesas</legend>
+                          <ul>
+                            <h>Cuadradas Pequeñas (35 x 35 pulg.):</h>
+                            <input type="number" name="cuadradas" min="1" max="5">
+                            <br><br>
+                            <h>Rectangulares Medianas (72 x 30 pulg.):</h>
+                            <input type="number" name="rectangularesp" min="1" max="5">
+                            <br><br>
+                            <h>Rectangulares Grandes (96 x 30 pulg.):</h>
+                            <input type="number" name="rectangularesg" min="1" max="5">
+                            <br><br>
+                            <h>Redondas pequeñas 6 puestos (43.5 pulg.):</h>
+                            <input type="number" name="redondasp" min="1" max="5">
+                            <br><br>
+                            <h>Redondas grandes 10 puestos (60.0 pulg.):</h>
+                            <input type="number" name="redondasg" min="1" max="5">
+                            <br><br>
+                            <h>Cocteleras:</h>
+                            <input type="number" name="cocteleras" min="1" max="5">
+                          </ul>
+                        </fieldset>
+                        <br>
+                        </div>
+                        
+                        <div id="right">
+                        <fieldset>
+                        <legend>Equipos de Café / Te</legend>
+                          <ul>
+                            <h>Cafetera (30 tazas):</h>
+                            <input type="number" name="cafetera30" min="1" max="30">
+                            <br><br>
+                            <h>Cafetera (100 tazas):</h>
+                            <input type="number" name="cafetera100" min="1" max="100">
+                            <br><br>
+                            <h>Tetera (30 tazas):</h>
+                            <input type="number" name="tetera30" min="1" max="30">
+                            <br><br>
+                            <h>Tetera (100 tazas):</h>
+                            <input type="number" name="tetera100" min="1" max="100">
+                          </ul>
+                        </fieldset>
+                        
+                        <br>
+                            
+                        <fieldset>
+                        <legend>Cubrimientos</legend>
+                          <ul>
+                            <h>Manteles:</h>
+                            <input type="number" name="manteles" min="1" max="1069">
+                            <br><br>
+                            <h>Mantel tipo pollera:</h>
+                            <input type="number" name="mantelesp" min="1" max="195">
+                            <br><br>
+                            <h>Mantel tipo lycra:</h>
+                            <input type="number" name="mantelycra" min="1" max="559">
+                            <br><br>
+                            <h>Manteles para cocteleras:</h>
+                            <input type="number" name="mantelc" min="1" max="140">
+                            <br><br>
+                            <h>Cubiertas blancas para sillas:</h>
+                            <input type="number" name="cubiertasb" min="1" max="711">
+                            <br><br>
+                            <h>Cubiertas / colores para sillas blancas:</h>
+                            <input type="number" name="cubiertasc" min="1" max="5">
+                          </ul>
+                        </fieldset>
+                        </div>
+                        
+                
+                        <!--<span>
+                            <img src="../resources/img/charla.jpg" width="390px" height="580px" class="img-responsive">
+                        </span>-->
+                  </div>
+                  
+              </form>
+                
+            </span>
+        </div>
+        <br>
+        <div class="progress">
+            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:75%"></div>
+        </div> 
+        <br>
+        <a class="btn btn-primary" href="solicitud_reserva3.html" role="button">Siguiente</a>
+  </div><br>
+    
+  
+  
+
+
+<!--- Footer -->
+<footer style="background-color: #68086c;">
+	<div>
+	  <br>
+	  <p class="m-0 text-center text-white">Copyright &copy; Nuestro Sitio Web 2019 <br> <a href="http://disclaimer.innovacion.gob.pa/" target="_blank"> Declaración de Privacidad </a> </p>
+	  <br>
+	</div>
+	<!-- /.container -->
+</footer>
+</body>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="../resources/img/logo_utp.png"/>
+	<title>Bienvenidos / Sistema de Reservacion de Eventos UTP</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="../resources/css/estilos.css" rel="stylesheet">
+</head>
+<body>
+
+<!--Barra de navegacion -->
+<nav class="navbar navbar-expand-md sticky-top" style="background-color: #68086c;">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="../index.html"><img src=../resources/img/logo_utp.png width="60px" height="60px"></a>
+		<h6 style="color: white">Universidad Tecnologica de Panama<br><small>Sistema de Reservacion de eventos Campus Central Victor Levi Sasso</small></h6>
+	   <button class="navbar-toggler" type="button" data-toggle="collapse"
+		 data-target="#navbarResponsive">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		  <div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+			  <li class="nav-item active">
+			   <a class="nav-link" style="color: white" href="calendario.html">Calendario</a>
+			  </li>
+			  <li class="nav-item active">
+			   <a class="nav-link" style="color: white" href="solicitud_reserva.html">Reservar eventos</a>
+			  </li>
+			  <li class="nav-item active">
+			   <a class="nav-link" style="color: white" href="../index.html">Cerrar Sesión</a>
+			  </li>
+			  <li class="nav-item active">
+				<a class="nav-link" style="color: white" href="#"></a>
+			  </li>
+			  <li class="nav-item active">
+				<a class="btn btn-default shadow" href="#" role="button"></a>
+			  </li>
+			</ul>
+		</div>
+	</div>
+  </nav>
+
+<!-- Formulario de reservacion de eventos -->
+<div class="container">
+  <div class="col clearfix">
+        <span class="float-center">
+            <br>
+            <h3>Formulario para reservación de eventos en la Facultad de Sistemas</h3>
+              <form action="solicitud_reserva1.html" method="post" id="usrform">
+                <div class="form-group">
+                  <label for="unidad">Unidad:</label>
+                  <input type="unidad" class="form-control" id="unidad" form="usrform" name="unidad">
+                </div>
+                <label for="correo">Lugar de Actividad:</label>
+                  <br>
+                        <select name="lugar">
+                            <option value="lobby">Lobby Edificio N°3</option>
+                            <option value="sotano">Sotano de Edificio N°3</option>
+                          </select>
+                  <br><br>
+                  
+                <div class="form-group">
+						<label for="fecha_hora_evento">Fecha y hora:</label>
+						<br>
+						<label for="fecha_evento">Seleccione dia:</label>
+						<br>
+						<input type="date" name="dia_evento">
+                        <br>
+						<label for="fecha_evento">Seleccione hora de inicio:</label>
+						<br>
+						<input type="time" name="horaini_evento">
+						<br>
+						<label for="fecha_evento">Seleccione hora de finalizacion:</label>
+						<br>
+						<input type="time" name="horafin_evento">
+					  </div>
+                <div class="form-group">
+                    
+                <div class="form-group">
+                  <label for="nombre_actividad">Nombre de Actividad:</label>
+                  <input type="nombre_actividad" class="form-control" id="nombre_actividad" form="usrform"  name="nombre_actividad">
+				</div>
+                    
+                <label for="comentarios">Informacion adicional</label>
+        
+                    <textarea type="comentaios" class="form-control" rows="3" id="comentarios" form="usrform" name="comentarios"></textarea>
+                    <br>
+                    
+				<div class="form-group">
+                  <label for="responsable">Solicitado Por:</label>
+                  <input type="responsable" class="form-control" id="responsable" form="usrform"  name="responsable">
+                </div>
+                    
+                <div class="form-group">
+                  <label for="correo">Telefono:</label>
+                  <input type="correo" class="form-control" id="correo" form="usrform"  name="telefono">
+				</div>
+						<br><br>
+                </div>
+				<h6 style="color: black"><small>Nota: "Su Solicitud será atendida en un lapso de 24 horas, de no ser así porfavor notificarnos nuevamente por este medio".</small></h6>
+				
+                <div class="progress">
+					<div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:35%"></div>
+					</div> 
+                    <br>
+					<a class="btn btn-primary" href="solicitud_reserva2.html" role="button">Siguiente</a>
+              </form>
+            </span>
+        </div>
+        <br>
+        
+  </div>
+  
+
+
+<!--- Footer -->
+<footer style="background-color: #68086c;">
+	<div>
+	  <br>
+	  <p class="m-0 text-center text-white">Copyright &copy; Nuestro Sitio Web 2019 <br> <a href="http://disclaimer.innovacion.gob.pa/" target="_blank"> Declaración de Privacidad </a> </p>
+	  <br>
+	</div>
+	<!-- /.container -->
+</footer>
+</body>
