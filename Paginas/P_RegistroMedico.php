@@ -86,7 +86,7 @@
       </table>
     </div>
 
-    <button type="button" onclick="window.location.href='P_SolicitudesServicios.php'">Solicitudes De Servicios</button>
+    <button type="button" class="btn" onclick="window.location.href='P_SolicitudesServicios.php'">Solicitudes De Servicios</button>
 
     <footer style="background-color: #68086c;" >
 	<div>

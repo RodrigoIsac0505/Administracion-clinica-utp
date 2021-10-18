@@ -132,7 +132,7 @@
       </table>
     </div>
 
-    <button type="button" onclick="window.location.href='P_RegistrosMedicos.php'">Registros Medicos</button>
+    <button type="button" class="btn" onclick="window.location.href='P_RegistrosMedicos.php'">Registros Medicos</button>
 
     <footer style="background-color: #68086c;" >
 	<div>

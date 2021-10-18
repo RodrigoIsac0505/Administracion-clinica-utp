@@ -67,7 +67,7 @@
       </table>
     </div>
 
-    <button type="button" onclick="window.location.href='P_RegistroMedico.php'">Registro Medico</button>
+    <button type="button" class="btn" onclick="window.location.href='P_RegistroMedico.php'">Registro Medico</button>
     <footer style="background-color: #68086c;" >
 	<div>
     <a class="navbar-brand" href="../index.html"><img src=../src/img/logo_utp.png width="100px" height="100px"></a>
