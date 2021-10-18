@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<!doctype html>
 <html lang="en">
-  <head>
-  <link rel="shortcut icon" href="../src/img/logo_utp.png">
-    <title>Solicitudes Servicios</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../src/img/logo_utp.png">
+    <title>Eliminar Usuario</title>
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../Css/Rcss.css">
-  </head>
-  <body>
+
+</head>
+<body>
 <!--Barra de navegacion -->
 <nav class="navbar navbar-expand-md sticky-top" style="background-color: #68086c;">
 
@@ -32,101 +31,107 @@
     <h6 style="color: white">Nombre Apellido</h6>
     <a class="navbar-brand ml-1" href=""><img src="../src/img/logo_utp.png" width="60px" height="60px"></a>
     
-</nav> 
-   
-    <h3>Solicitudes de Servicios</h3>
-    <div class="container">
+</nav>      
+<h3 class="mt-2">Eliminar Usuario</h3>
+    <div class="container py-3">
     <table class="table table-hover  table-bordered">
        
-        <thead class="table-dark">
+        <thead class="table-dark" id="thead">
           <tr class="table-active">
             <th scope="col">#</th>
-            <th scope="col">Dia</th>
-            <th scope="col">Servicio</th>
-            <th scope="col">Horas</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Correo</th>
+            <th scope="col">Cedula</th>
+            <th scope="col">Tipo Usuario</th>
+            <th scope="col"></th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td scope="row">1</td>
-            <td>19 enero</td>
-            <td>Cita</td>
-            <td>10:30</td>
+            <td>Juan Perez</td>
+            <td>J@correo.com</td>
+            <td>8-334-6231</td>
+            <td>2</td>
+            <td><button>Eliminar</button></td>
          
           </tr>
           <tr>
             <td scope="row">2</td>
-            <td>21 febrero</td>
-            <td>Cita</td>
-            <td>7:20</td>
+            <td>Ana Corea</td>
+            <td>Ana@correo.com</td>
+            <td>8-214-6221</td>
+            <td>1</td>
+            <td><button>Eliminar</button></td>
           </tr>
-          <tr>
+
+            <tr>
             <td scope="row">3</td>
-            <td>20 Marzo</td>
-            <td>Cita</td>
-            <td>9:10</td>
+            <td>Pepe Gonzales</td>
+            <td>pepe@correo.com</td>
+            <td>8-143-6121</td>
+            <td>3</td>
+            <td><button>Eliminar</button></td>
           </tr>
 
           <tr>
             <td scope="row">4</td>
-            <td>19 Abril</td>
-            <td>Cita</td>
-            <td>11:00</td>
-         
+            <td>Paola perez</td>
+            <td>Paola@correo.com</td>
+            <td>8-564-1421</td>
+            <td>1</td>
+            <td><button>Eliminar</button></td>
           </tr>
-          <tr>
+
+            <tr>
             <td scope="row">5</td>
-            <td>21 Junio</td>
-            <td>Cita</td>
-            <td>8:20</td>
+            <td>Larry Gonzales</td>
+            <td>L@correo.com</td>
+            <td>8-143-6121</td>
+            <td>3</td>
+            <td><button>Eliminar</button></td>
           </tr>
+
           <tr>
             <td scope="row">6</td>
-            <td>20 Julio</td>
-            <td>Cita</td>
-            <td>9:40</td>
+            <td>Laura Koeman</td>
+            <td>Laura@correo.com</td>
+            <td>2-714-3221</td>
+            <td>1</td>
+            <td><button>Eliminar</button></td>
           </tr>
 
-          <tr>
+            <tr>
             <td scope="row">7</td>
-            <td>27 febrero</td>
-            <td>Cita</td>
-            <td>8:00</td>
+            <td>Jaymi Diaz</td>
+            <td>Jay@correo.com</td>
+            <td>5-233-3121</td>
+            <td>3</td>
+            <td><button>Eliminar</button></td>
           </tr>
+
           <tr>
             <td scope="row">8</td>
-            <td>24 Marzo</td>
-            <td>Cita</td>
-            <td>9:00</td>
+            <td>Pamela Santos</td>
+            <td>Psantos@correo.com</td>
+            <td>8-354-1221</td>
+            <td>1</td>
+            <td><button>Eliminar</button></td>
           </tr>
 
-          <tr>
+            <tr>
             <td scope="row">9</td>
-            <td>11 Abril</td>
-            <td>Cita</td>
-            <td>10:10</td>
-         
-          </tr>
-          <tr>
-            <td scope="row">10</td>
-            <td>16 Junio</td>
-            <td>Cita</td>
-            <td>7:40</td>
-          </tr>
-          <tr>
-            <td scope="row">11</td>
-            <td>26 Julio</td>
-            <td>Cita</td>
-            <td>9:50</td>
+            <td>Miguel Gonzales</td>
+            <td>miguel@correo.com</td>
+            <td>8-743-1121</td>
+            <td>2</td>
+            <td><button>Eliminar</button></td>
           </tr>
           
           
         </tbody>
       </table>
     </div>
-
-    <button type="button" onclick="window.location.href='P_Citas.php'">Citas</button>
-
     <footer style="background-color: #68086c;" >
 	<div>
     <a class="navbar-brand" href="../index.html"><img src=../src/img/logo_utp.png width="100px" height="100px"></a>
@@ -145,6 +150,6 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>   
+</body>
 </html>
