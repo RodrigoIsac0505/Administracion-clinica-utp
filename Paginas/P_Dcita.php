@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
   <link rel="shortcut icon" href="../src/img/logo_utp.png">
-    <title>Reportes</title>
+    <title>Citas</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,10 +11,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../Css/Rcss.css">
-
   </head>
   <body>
-<!--Barra de navegacion -->
+
+  <!--Barra de navegacion -->
 <nav class="navbar navbar-expand-md sticky-top" style="background-color: #68086c;">
 
 <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -34,27 +34,106 @@
     <a class="navbar-brand ml-1" href=""><img src="../src/img/logo_utp.png" width="60px" height="60px"></a>
     
 </nav> 
-    <h3 id="prueba">Crear Reporte</h3>
-    <div class="container justify-content">
-    <label>Tiempo</label>
-    <div class="form-inline  " id="reporte">
-        <select type="text" class="form-control w-75 mb-1    " id="tiempo">
-            <option selected>Ultimos 7 dias</option>
-            <option>Ultimos 15 dias</option>
-            <option>Ultimos 30 dias</option>
-        </select> 
+    <h3>Citas</h3>
+    <div class="container">
+    <table class="table table-hover  table-bordered">
+       
+        <thead class="table-dark">
+          <tr class="table-active">
+            <th scope="col">#</th>
+            <th scope="col">Dia</th>
+            <th scope="col">Servicio</th>
+            <th scope="col">Horas</th>
+          </tr>
+        </thead>
+        <tbody>
+
+         <tr>
+            <td scope="row">1</td>
+            <td>27 febrero</td>
+            <td>Cita</td>
+            <td>8:00</td>
+          </tr>
+
+          <tr>
+            <td scope="row">2</td>
+            <td>24 Marzo</td>
+            <td>Cita</td>
+            <td>9:00</td>
+          </tr>
+
+          <tr>
+            <td scope="row">3</td>
+            <td>11 Abril</td>
+            <td>Cita</td>
+            <td>10:10</td>
+         
+          </tr>
+
+         <tr>
+            <td scope="row">4</td>
+            <td>19 Abril</td>
+            <td>Cita</td>
+            <td>11:00</td>
+         
+          </tr>
+
+          <tr>
+            <td scope="row">5</td>
+            <td>16 Junio</td>
+            <td>Cita</td>
+            <td>7:40</td>
+          </tr>
+
+          <tr>
+            <td scope="row">6</td>
+            <td>21 Junio</td>
+            <td>Cita</td>
+            <td>8:20</td>
+          </tr>
+
+          <tr>
+            <td scope="row">7</td>
+            <td>20 Julio</td>
+            <td>Cita</td>
+            <td>9:40</td>
+          </tr>
+
+          <tr>
+            <td scope="row">8</td>
+            <td>26 Julio</td>
+
+            <td>Cita</td>
+            <td>9:50</td>
+          </tr>
+
+         <tr>
+            <td scope="row">9</td>
+            <td>3 agosto</td>
+            <td>Cita</td>
+            <td>10:20</td>
+          </tr>
+
+          <tr>
+            <td scope="row">10</td>
+            <td>23 septiembre</td>
+            <td>Cita</td>
+            <td>7:00</td>
+          </tr>
+
+          <tr>
+            <td scope="row">11</td>
+            <td>5 diciembre</td>
+            <td>Cita</td>
+            <td>9:30</td>
+          </tr>
+          
+        </tbody>
+      </table>
     </div>
-      <p class="text-justify">
-        <br>
-        En los ultimos 7 dias estas fueron las cantidades
-        de servicio que se brindaron <br> Citas:5 <br> 
-        Citas de emergencia: 10
 
-      </p>
+    <button type="button" class="btn" onclick="window.location.href='P_DregistrosM.php'">Registros Medicos</button>
 
-    </div>
-
-    <button type="button" class="btn" onclick="window.location.href='P_EliminarUsuario.php'">Eliminar Usuario</button>
     <footer style="background-color: #68086c;" >
 	<div>
     <a class="navbar-brand" href="../index.html"><img src=../src/img/logo_utp.png width="100px" height="100px"></a>
@@ -67,7 +146,6 @@
 	  <br>
 	</div>
 </footer>
-    
    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

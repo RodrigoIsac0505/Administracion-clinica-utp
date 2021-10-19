@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
   <link rel="shortcut icon" href="../src/img/logo_utp.png">
-    <title>Citas</title>
+    <title>Registro Medico</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,10 +11,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../Css/Rcss.css">
-  </head>
   <body>
-
-  <!--Barra de navegacion -->
+<!--Barra de navegacion -->
 <nav class="navbar navbar-expand-md sticky-top" style="background-color: #68086c;">
 
 <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -34,105 +32,61 @@
     <a class="navbar-brand ml-1" href=""><img src="../src/img/logo_utp.png" width="60px" height="60px"></a>
     
 </nav> 
-    <h3>Citas</h3>
+     <h3>Registro Medico</h3>
+    <!-- Select -->
+     <div class="container">
+        <div class="form-group">
+            <div class="input-group">
+                <select type="text" class="form-control" id="select_servicio">
+                    <option selected>Servicios</option>
+                    <option>Super option 1</option>
+                    <option>Super option 2</option>
+                    <option>Super option 3</option>
+                </select>
+
+                <button ID="submit">Buscar</button>
+            </div>
+        </div>
+      
+    </div>
+        <!--Tabla -->
     <div class="container">
     <table class="table table-hover  table-bordered">
        
         <thead class="table-dark">
           <tr class="table-active">
+
             <th scope="col">#</th>
-            <th scope="col">Dia</th>
+            <th scope="col">Fecha</th>
             <th scope="col">Servicio</th>
-            <th scope="col">Horas</th>
           </tr>
         </thead>
         <tbody>
-
-         <tr>
-            <td scope="row">1</td>
-            <td>27 febrero</td>
-            <td>Cita</td>
-            <td>8:00</td>
-          </tr>
-
           <tr>
-            <td scope="row">2</td>
-            <td>24 Marzo</td>
+         
+            <td>1</td>
+            <td>3 marzo</td>
             <td>Cita</td>
-            <td>9:00</td>
-          </tr>
-
-          <tr>
-            <td scope="row">3</td>
-            <td>11 Abril</td>
-            <td>Cita</td>
-            <td>10:10</td>
          
           </tr>
-
-         <tr>
-            <td scope="row">4</td>
-            <td>19 Abril</td>
-            <td>Cita</td>
-            <td>11:00</td>
-         
-          </tr>
-
           <tr>
-            <td scope="row">5</td>
-            <td>16 Junio</td>
+   
+            <td>2</td>
+            <td>20 julio</td>
             <td>Cita</td>
-            <td>7:40</td>
           </tr>
-
           <tr>
-            <td scope="row">6</td>
-            <td>21 Junio</td>
+           
+            <td>3</td>
+            <td>9 septiembre</td>
             <td>Cita</td>
-            <td>8:20</td>
-          </tr>
-
-          <tr>
-            <td scope="row">7</td>
-            <td>20 Julio</td>
-            <td>Cita</td>
-            <td>9:40</td>
-          </tr>
-
-          <tr>
-            <td scope="row">8</td>
-            <td>26 Julio</td>
-
-            <td>Cita</td>
-            <td>9:50</td>
-          </tr>
-
-         <tr>
-            <td scope="row">9</td>
-            <td>3 agosto</td>
-            <td>Cita</td>
-            <td>10:20</td>
-          </tr>
-
-          <tr>
-            <td scope="row">10</td>
-            <td>23 septiembre</td>
-            <td>Cita</td>
-            <td>7:00</td>
-          </tr>
-
-          <tr>
-            <td scope="row">11</td>
-            <td>5 diciembre</td>
-            <td>Cita</td>
-            <td>9:30</td>
           </tr>
           
         </tbody>
       </table>
     </div>
 
-    <button type="button" class="btn" onclick="window.location.href='P_RegistrosMedicos.php'">Registros Medicos</button>
+    <button type="button" class="btn" onclick="window.location.href='P_SsolicitudesS.php'">Solicitudes De Servicios</button>
 
     <footer style="background-color: #68086c;" >
 	<div>
@@ -146,7 +100,6 @@
 	  <br>
 	</div>
 </footer>
-   
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

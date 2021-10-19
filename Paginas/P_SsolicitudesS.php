@@ -125,7 +125,7 @@
       </table>
     </div>
 
-    <button type="button" class="btn" onclick="window.location.href='P_Citas.php'">Citas</button>
+    <button type="button" class="btn" onclick="window.location.href='P_Dcita.php'">Citas</button>
 
     <footer style="background-color: #68086c;" >
 	<div>
