@@ -46,7 +46,7 @@
   <div class="col clearfix">
         <span class="float-center">
             <br>
-              <form action="/Paginas/P_RegistrosMedicos.php" method="post" id="usrform">
+              <form action="P_RegistrosMedicos.php" method="post" id="usrform">
                 
 				<div id="main">
                   

@@ -18,14 +18,14 @@
 <div class="collapse navbar-collapse" id="navbarResponsive">
 
         <li class="nav-item active">
-         <a class="nav-link" style="color: white" href="..calendariopublico.html">Calendario</a> 
+         <a class="nav-link" style="color: white" href="P_Inicio.php">Pagina Principal</a> 
         </li>
 
         <li class="nav-item active">
-         <a class="nav-link" style="color: white" href="solicitud_reserva1.html">Reservar eventos</a>
+         <a class="nav-link" style="color: white" href="solicitud_reserva1.html"> </a>
         </li>
         <li class="nav-item active">
-         <a class="nav-link" style="color: white" href="../index.html">Cerrar Sesión</a>
+         <a class="nav-link" style="color: white" href="../index.html"> </a>
         </li>
     </div>
     <h6 style="color: white">Nombre Apellido</h6>
