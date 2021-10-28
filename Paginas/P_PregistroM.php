@@ -13,25 +13,48 @@
     <link rel="stylesheet" href="../Css/Rcss.css">
   <body>
 <!--Barra de navegacion -->
-<nav class="navbar navbar-expand-md sticky-top" style="background-color: #68086c;">
-
-<div class="collapse navbar-collapse" id="navbarResponsive">
-
-        <li class="nav-item active">
-         <a class="nav-link" style="color: white" href="P_Inicio.php">Pagina Principal</a> 
-        </li>
-
-        <li class="nav-item active">
-         <a class="nav-link" style="color: white" href="solicitud_reserva1.html"> </a>
-        </li>
-        <li class="nav-item active">
-         <a class="nav-link" style="color: white" href="../index.html"> </a>
-        </li>
-    </div>
-    <h6 style="color: white">Nombre Apellido</h6>
-    <a class="navbar-brand ml-1" href=""><img src="../src/img/logo_utp.png" width="60px" height="60px"></a>
-    
-</nav> 
+<header>
+        <nav class="navbar navbar-expand-md sticky-top" style="background-color: #68086c;">
+            <div>
+                <div id="menuD">
+                    <ul class="menu">
+                        <li><a href=""><img src="../src/img/menu.png" width="50px"></a>
+                            <ul>
+                                <li><a href="">Modificar Perfil</a></li>
+                                <li><a href="">Cerrar sesion</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="centro">
+                <div class="titulo">
+                    <h2 style="color: white">Clinica universitaria</h2>
+                </div>
+                <div class="menuO">
+                    <div class="collapse navbar-collapse" >
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pagina principal</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Solicitar de servicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Servicio solicitado</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Ayuda</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <h6 style="color: white" class="nombreUser">Nombre Apellido</h6>
+            <a href=""><img src="../src/img/perfil.png" class="fotoPerfil" width="60px" height="60px"></a>
+   
+    </header><br>
      <h3>Registro Medico</h3>
     <!-- Select -->
      <div class="container">
@@ -88,18 +111,23 @@
 
     <button type="button" class="btn" onclick="window.location.href='P_SsolicitudesS.php'">Solicitudes De Servicios</button>
 
-    <footer style="background-color: #68086c;" >
-	<div>
-    <a class="navbar-brand" href="../index.html"><img src=../src/img/logo_utp.png width="100px" height="100px"></a>
-    <p class="m-0 text-right text-white">Universidad Tecnológica de Panamá - 2021<br>
-		  Dirección: Avenida Universidad Tecnológica de Panamá, Vía Puente Centenario,<br>
-		  Campus Metropolitano Víctor Levi Sasso.<br>
-		  Teléfono. (507) 560-3000<br>
-		  Correo electrónico: buzondesugerencias@utp.ac.pa<br> <a href="https://utp.ac.pa/311-centro-de-atencion-ciudadana" target="_blank">311 Centro de Atención Ciudadana</a><br>
-		  <a href="https://innovacion.gob.pa/acercade/disclaimer/" target="_blank" rel=" noopener noreferrer">Políticas de Privacidad</a> </p>
-	  <br>
-	</div>
-</footer>
+    <footer class="navbar navbar-expand-md sticky-top piePagina" style="background-color: #68086c;">
+        <div class="pgIMG">
+            <img src=../src/img/logoUTP.png width="100px" height="100px">
+        </div>
+        <div class="pgP">
+            <p class="">Universidad Tecnológica de Panamá - 2021<br>
+                Dirección: Avenida Universidad Tecnológica de Panamá, Vía Puente Centenario,<br>
+                Campus Metropolitano Víctor Levi Sasso.<br>
+                Teléfono. (507) 560-3000<br>
+                Correo electrónico: buzondesugerencias@utp.ac.pa<br> <a
+                    href="https://utp.ac.pa/311-centro-de-atencion-ciudadana" target="_blank">311 Centro de Atención
+                    Ciudadana</a><br>
+                <a href="https://innovacion.gob.pa/acercade/disclaimer/" target="_blank"
+                    rel=" noopener noreferrer">Políticas de Privacidad</a>
+            </p>
+        </div>
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
