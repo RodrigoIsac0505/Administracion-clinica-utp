@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="../src/img/logo_utp.png"/>
-	<title> Sistema de administración de pacientes para la clínica universitaria UTP</title>
+	<title>Registrarse</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -19,52 +19,14 @@
     <link rel="stylesheet" href="../Css/RCss.css">
 </head>
 <body>
-  <!--Barra de navegacion -->
-  <header>
-    <nav class="navbar navbar-expand-md sticky-top" style="background-color: #68086c;">
-        <div>
-            <div id="menuD">
-                <ul class="menu">
-                    <li><a href=""><img src="../src/img/menu.png" width="50px"></a>
-                        <ul>
-                            <li><a href="">Modificar Perfil</a></li>
-                            <li><a href="">Cerrar sesion</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="centro">
-            <div class="titulo">
-                <h2 style="color: white">Clinica universitaria</h2>
-            </div>
-            <div class="menuO">
-                <div class="collapse navbar-collapse" >
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../Paginas/P_Index (EXTRA).php">Pagina Principal</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../Paginas/P_PregistroM.php">Registros Medicos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../Paginas/P_PservicioS.php">Solicitud de Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="../Paginas/P_SsolicitudesS.php">Servicio Solicitados</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="../Paginas/P_Inicio.php">Ayuda</a>
-                    </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        
-        <h6 style="color: white" class="nombreUser">Nombre Apellido</h6>
-        <a href=""><img src="../src/img/perfil.png" class="fotoPerfil" width="60px" height="60px"></a>
 
-</header>
+  <header style="background-color: #68086c;"> 
+    <div style="padding: 30px;">
+      <center>
+        <h2 style="color: white">Clinica universitaria</h2>
+      </center>
+    </div>
+  </header>
 
     <div class="wrapper fadeInDown">
         <div id="formContent">
@@ -73,13 +35,9 @@
           <!-- Icon -->
           <div class="fadeIn first">
             <br>
-            <h6>Perfil</h6>
-            <br>
-            <img src="../src/img/perfil.png" id="icon" alt="User Icon" />
-            <br>
+            <h3>Registrarse</h3>
             <br>
           </div>
-          <!-- Login Form -->
           <form>
             
             <br> 
@@ -91,21 +49,26 @@
             <input type="text" id="password" class="fadeIn third" name="login">
             <br>
             <br>
+            <h6>Cedula</h6>
+            <input type="text" id="password" class="fadeIn third" name="login">
+            <br>
+            <br>
             <h6>Correo</h6>
+            <input type="email" id="password" class="fadeIn third" name="login">
+            <br>
+            <br>
+            <h6>Contraseña</h6>
             <input type="text" id="password" class="fadeIn third" name="login">
             <br>
             <br>
-            <h6>Ingrese una imagen</h6>
-            <input type="file" id="password" class="fadeIn third" name="login">
-            <br>
-            <br>
-            <h6>Cédula</h6>
+            <h6>Vuelva a escribir la contraseña</h6>
             <input type="text" id="password" class="fadeIn third" name="login">
             <br>
             <br>
-            <center><button class="btn Pbotones">Actualizar</button></center>
-            <!--<input type="button" class="fadeIn fourth" value="Actualizar" onclick="location.href='P_Inicio.php';" -->
+            <center><input type="submit" class="btn Pbotones" value="Crear" style="background-color: #68086c; color: white;"></center>
             
+            <p>¿Ya tienes una cuenta? <a href="/index.html">Inicia sesion</a></p>
+
           </form>
         </div>
       </div>

@@ -1,59 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content />
-        <meta name="author" content />
-        <title>UTP CLINICA/EMERGENCIAS</title>
-        <!-- logo-->
-        <link rel="icon" type="image/x-icon" href="assets/logo_utp_1_300.png" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    </head>
-    <body id="page-top">
-    <body class="d-flex flex-column">
-        <main class="flex-shrink-0">
-               <!--Barra de navegacion -->
-  <nav class="navbar navbar-expand-md sticky-top" style="background-color: #68086c;">
-	
-    <div class="collapse navbar-collapse" id="navbarResponsive">
 
-        <li class="nav-item active">
-         <a class="nav-link" style="color: white" href="">Pagina Principal</a> 
-        </li>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content />
+  <meta name="author" content />
+  <title>Pagina principal</title>
+  <link href="../Css/RRcss.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md sticky-top" style="background-color: #68086c;">
+        <div>
+            <div id="menuD">
+                <ul class="menu">
+                    <li><a href=""><img src="../src/img/menu.png" width="50px"></a>
+                        <ul>
+                            <li><a href="">Modificar Perfil</a></li>
+                            <li><a href="">Cerrar sesion</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="centro">
+            <div class="titulo">
+                <h2 style="color: white">Clinica universitaria</h2>
+            </div>
+            <div class="menuO">
+                <div class="collapse navbar-collapse" >
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="P_Inicio.html">Pagina principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="P_PsolicitarS.html">Solicitar de servicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="P_PservicioS.html">Servicio solicitado</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="AyudaPaciente.html">Ayuda</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         
-        <li class="nav-item active">
-          <a class="nav-link" style="color: white" href="">Registro Medico</a> 
-         </li>
+        <h6 style="color: white" class="nombreUser">Nombre Apellido</h6>
+        <a href=""><img src="../src/img/perfil.png" class="fotoPerfil" width="60px" height="60px"></a>
 
-        <li class="nav-item active">
-         <a class="nav-link" style="color: white" href="">Solicitud de Servicios</a>
-        </li>
+</header><br>
 
-        <li class="nav-item active">
-          <a class="nav-link" style="color: white" href="">Servicios Solicitados</a>
-         </li>
-
-        <li class="nav-item active">
-          <a class="nav-link" style="color: white" href="">Ayuda</a>
-         </li>
-      
-    </div>
-    
-    <h6 style="color: white">Nombre Apellido</h6>
-    <a class="navbar-brand" href=""><img src="resources/img/logo_utp.png" width="60px" height="60px"></a>
-    
-  </div>
-  </nav>
-    
-  <header class="py-5">
-         
   <div class="mask d-flex align-items-center h-300 gradient-custom-3">
     <div class="container h-300">
       <div class="row d-flex justify-content-center align-items-center h-100">
@@ -61,47 +63,22 @@
           <div class="card" style="border-radius: 20px;">
             <div class="card-body p-10">
               <h1 class="text-uppercase text-center mb-4">Atención de Emergencia</h1>
-              <?php 
-                            if(@$_GET['Success']==true)
-                            {
-                        ?>
-                            <div class="alert-light text-success text-center py-3"><?php echo$_GET['Success'] ?></div>
-                        <?php
-                            }
-                        
-                        ?>
-
               <form id="register-form" class="form" action="process2.php" method="post">
                 <!-- Name input-->
                 <div class="form-floating mb-3">
-                  <input class="form-control" id="name" type="text" placeholder="Ingrese Emergencia..." data-sb-validations="required" />
-                  <label for="name">Emergencia</label>
+                  <input class="form-control" id="name" type="text" placeholder="Ingrese Emergencia..."
+                    data-sb-validations="required" />
                   <div class="invalid-feedback" data-sb-feedback="name:required">Coloque la Emergencia.</div>
-              </div>
-                  <!-- Message input-->
-                  <div class="form-floating mb-3">
-                    <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                    <label for="message">Descripcion</label>
-                    <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                 </div>
-                <!-- Submit success message-->
-                <!---->
-                <!-- This is what your users will see when the form-->
-                <!-- has successfully submitted-->
-                <div class="d-none" id="submitSuccessMessage">
-                    <div class="text-center mb-3">
-                        <div class="fw-bolder">Form submission successful!</div>
-                        To activate this form, sign up at
-                        <br />
-                        <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                    </div>
+                <!-- Message input-->
+                <div class="form-floating mb-3">
+                  <textarea class="form-control" id="message" type="text" placeholder="Describa la emergencia"
+                    style="height: 10rem" data-sb-validations="required"></textarea>
+                  <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                 </div>
-                <!-- Submit error message-->
-                <!---->
-                <!-- This is what your users will see when there is-->
-                <!-- an error submitting the form-->
-                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                
+
+                <center> <input type="submit" class="btn Pbotones" style="background-color: #68086c; color: white;"></center>
+
               </form>
 
             </div>
@@ -110,66 +87,52 @@
       </div>
     </div>
   </div>
-</section>
 
-<div class="mask d-flex align-items-center h-300 gradient-custom-3">
-  <div class="container h-300">
-    <div class="row d-flex justify-content-center align-items-center h-100">
-      <div class="col-12 col-md-9 col-lg-7 col-xl-6">
-        <div class="card" style="border-radius: 20px;">
-          <div class="card-body p-10">
-            <?php 
-                          if(@$_GET['Success']==true)
-                          {
-                      ?>
-                          <div class="alert-light text-success text-center py-3"><?php echo$_GET['Success'] ?></div>
-                      <?php
-                          }
-                      
-                      ?>
-
-            <form id="register-form" class="form" action="process2.php" method="post">
-              <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                  <label class="input-group-text" for="inputGroupSelect01">Solicitud de Servicios </label>
+  <div class="mask d-flex align-items-center h-300 gradient-custom-3" style="margin:20px;">
+    <div class="container h-300">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+          <div class="card" style="border-radius: 20px;">
+            <div class="card-body p-10">
+              <form id="register-form" class="form" action="process2.php" method="post">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">Solicitud de Servicios </label>
+                  </div>
+                  <select class="custom-select" id="inputGroupSelect01">
+                    <option selected>Seleccione...</option>
+                    <option value="1">Servicio1</option>
+                    <option value="2">Servicio2</option>
+                    <option value="3">Servicio 3</option>
+                  </select>
                 </div>
-                <select class="custom-select" id="inputGroupSelect01">
-                  <option selected>Seleccione...</option>
-                  <option value="1">Servicio1</option>
-                  <option value="2">Servicio2</option>
-                  <option value="3">Servicio 3</option>
-                </select>
-              </div> 
-                <input type="submit" name="Enviarr" class="btn btn-info btn-md" value="Enviar">
-              </div>
+                <center><input type="submit" class="btn Pbotones" style="background-color: #68086c; color: white;"></center>
+            </div>
             </form>
-
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-</section>
-</main>
+  </div>
 
-</section>
-</header> 
-<footer style="background-color: #68086c;" >
-  <div>
-  <a class="navbar-brand" href="../index.html"><img src=../src/img/logo_utp.png width="100px" height="100px"></a>
-  <p class=" text-center mb-0 text-white">Universidad Tecnológica de Panamá - 2021<br>
+  <footer class="navbar navbar-expand-md sticky-top piePagina" style="background-color: #68086c;">
+    <div class="pgIMG">
+      <img src="../src/img/logoUTP.png" width="100px" height="100px">
+    </div>
+    <div class="pgP">
+      <p class="">Universidad Tecnológica de Panamá - 2021<br>
         Dirección: Avenida Universidad Tecnológica de Panamá, Vía Puente Centenario,<br>
         Campus Metropolitano Víctor Levi Sasso.<br>
         Teléfono. (507) 560-3000<br>
-        Correo electrónico: buzondesugerencias@utp.ac.pa<br> <a href="https://utp.ac.pa/311-centro-de-atencion-ciudadana" target="_blank">311 Centro de Atención Ciudadana</a><br>
-        <a href="https://innovacion.gob.pa/acercade/disclaimer/" target="_blank" rel=" noopener noreferrer">Políticas de Privacidad</a> </p>
-    <br>
-  </div>
-</footer>
-          <!-- Bootstrap core JS-->
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-          <!-- Core theme JS-->
-          <script src="js/scripts.js"></script>
-      </body>
-  </html>
+        Correo electrónico: buzondesugerencias@utp.ac.pa<br> <a
+          href="https://utp.ac.pa/311-centro-de-atencion-ciudadana" target="_blank">311 Centro de Atención
+          Ciudadana</a><br>
+        <a href="https://innovacion.gob.pa/acercade/disclaimer/" target="_blank" rel=" noopener noreferrer">Políticas de
+          Privacidad</a>
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>

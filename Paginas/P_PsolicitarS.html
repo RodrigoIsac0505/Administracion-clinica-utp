@@ -5,77 +5,67 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content />
         <meta name="author" content />
-        <title>UTP Clinica</title>
-        <!-- logo-->
-        <link rel="icon" type="image/x-icon" href="assets/logo_utp_1_300.png" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <title>Solicitar servicio</title>
+        <link href="../Css/RRcss.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
     </head>
     <body id="page-top">
     <body class="d-flex flex-column">
-        <main class="flex-shrink-0">
-                  <!--Barra de navegacion -->
-  <nav class="navbar navbar-expand-md sticky-top" style="background-color: #68086c;">
-	
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-
-        <li class="nav-item active">
-         <a class="nav-link" style="color: white" href="">Pagina Principal</a> 
-        </li>
-        
-        <li class="nav-item active">
-          <a class="nav-link" style="color: white" href="">Registro Medico</a> 
-         </li>
-
-        <li class="nav-item active">
-         <a class="nav-link" style="color: white" href="">Solicitud de Servicios</a>
-        </li>
-
-        <li class="nav-item active">
-          <a class="nav-link" style="color: white" href="">Servicios Solicitados</a>
-         </li>
-
-        <li class="nav-item active">
-          <a class="nav-link" style="color: white" href="">Ayuda</a>
-         </li>
-      
-    </div>
+      <header>
+        <nav class="navbar navbar-expand-md sticky-top" style="background-color: #68086c;">
+            <div>
+                <div id="menuD">
+                    <ul class="menu">
+                        <li><a href=""><img src="../src/img/menu.png" width="50px"></a>
+                            <ul>
+                                <li><a href="">Modificar Perfil</a></li>
+                                <li><a href="">Cerrar sesion</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="centro">
+                <div class="titulo">
+                    <h2 style="color: white">Clinica universitaria</h2>
+                </div>
+                <div class="menuO">
+                    <div class="collapse navbar-collapse" >
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                              <a class="nav-link" href="P_Inicio.html">Pagina principal</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="P_PsolicitarS.html">Solicitar de servicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="P_PservicioS.html">Servicio solicitado</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="AyudaPaciente.html">Ayuda</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <h6 style="color: white" class="nombreUser">Nombre Apellido</h6>
+            <a href=""><img src="../src/img/perfil.png" class="fotoPerfil" width="60px" height="60px"></a>
     
-    <h6 style="color: white">Nombre Apellido</h6>
-    <a class="navbar-brand" href=""><img src="resources/img/logo_utp.png" width="60px" height="60px"></a>
-    
-  </div>
-  </nav>
-    
-  <header class="py-5">
-         
-  <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+      </header> 
+  <div class="mask d-flex align-items-center h-100 gradient-custom-3" style="padding: 20px;">
     <div class="container h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-12 col-md-9 col-lg-7 col-xl-6">
           <div class="card" style="border-radius: 15px;">
             <div class="card-body p-5">
               <h2 class="text-uppercase text-center mb-3">Solicitar Servicios</h2>
-              <?php 
-                            if(@$_GET['Success']==true)
-                            {
-                        ?>
-                            <div class="alert-light text-success text-center py-3"><?php echo$_GET['Success'] ?></div>
-                        <?php
-                            }
-                        
-                        ?>
-
               <form id="register-form" class="form" action="process2.php" method="post">
               
                 <div class="form-outline mb-3">
                   <div class="input-group-prepend">
-                    <label class="input-group-text" for="inputGroupSelect01">Servicios</label>
+                    <label class="input-group-text" for="inputGroupSelect01">Seleccionar servicio</label>
                   </div>
                   <select class="custom-select" id="inputGroupSelect01">
                     <option selected>Seleccione...</option>
@@ -86,53 +76,34 @@
                </div>
                <div class="form-outline mb-3">
                 <div class="input-group-prepend">
-                  <label class="input-group-text" for="inputGroupSelect01">Servicios</label>
+                  <label class="input-group-text" for="inputGroupSelect01">Seleccionar fecha</label>
                 </div>
                 <select class="custom-select" id="inputGroupSelect01">
                   <option selected>Seleccione...</option>
-                  <option value="1">Servicio1</option>
-                  <option value="2">Servicio2</option>
-                  <option value="3">Servicio 3</option>
+                  <option value="1">12-10-11</option>
+                  <option value="2">12-10-12</option>
+                  <option value="3">12-10-13</option>
                 </select>
                 </div>
                 <div class="form-outline mb-3">
                   <div class="input-group-prepend">
-                    <label class="input-group-text" for="inputGroupSelect01">Servicios</label>
+                    <label class="input-group-text" for="inputGroupSelect01">Seleccionar hora</label>
                   </div>
                   <select class="custom-select" id="inputGroupSelect01">
                     <option selected>Seleccione...</option>
-                    <option value="1">Servicio1</option>
-                    <option value="2">Servicio2</option>
-                    <option value="3">Servicio 3</option>
+                    <option value="1">11:00</option>
+                    <option value="2">12:00</option>
+                    <option value="3">13:00</option>
                   </select>
                   </div>
-              
+                  <br>
+                  <br>
                   <!-- Message input-->
                   <div class="form-floating mb-3">
-                    <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                    <label for="message">Descripcion</label>
-                    <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                </div>
-                <!-- Submit success message-->
-                <!---->
-                <!-- This is what your users will see when the form-->
-                <!-- has successfully submitted-->
-                <div class="d-none" id="submitSuccessMessage">
-                    <div class="text-center mb-3">
-                        <div class="fw-bolder">Form submission successful!</div>
-                        To activate this form, sign up at
-                        <br />
-                        <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                    </div>
-                </div>
-                <!-- Submit error message-->
-                <!---->
-                <!-- This is what your users will see when there is-->
-                <!-- an error submitting the form-->
-                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                
+                    <textarea class="form-control" id="message" type="text" placeholder="Agregue una descripcion para el doctor" style="height: 10rem" data-sb-validations="required"></textarea>
+                </div>                
                 <div class="d-flex justify-content-center">
-                  <input type="submit" name="Enviar" class="btn btn-info btn-md" value="Enviar">
+                  <center> <input type="submit" class="btn Pbotones" value="Enviar" style="background-color: #68086c; color: white;"></center>
                 </div>
               </form>
 
@@ -145,7 +116,6 @@
 </section>
 </main>
 </section>
-</header> 
 
   <!-- Footer-->
            <footer style="background-color: #68086c;" >

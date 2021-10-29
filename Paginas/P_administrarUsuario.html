@@ -16,7 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../Css/RCss.css">
+    <link rel="stylesheet" href="../Css/RRcss.css">
 </head>
 <body>
   <!--Barra de navegacion -->
@@ -41,15 +41,18 @@
             <div class="menuO">
                 <div class="collapse navbar-collapse" >
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../Paginas/P_Index (EXTRA).php">Pagina Principal</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../Paginas/A_Añadir usuario.php">Añadir Usuario</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../Paginas/P_AeliminarU.php">Eliminar Usuario</a>
-                        </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="P_administrarUsuario.html">Pagina Principal</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="A_addUsuario.html">Añadir Usuario</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="P_AeliminarU.html">Eliminar Usuario</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="AyudaAdmin.html">Ayuda</a>
+                    </li>
                     </ul>
                 </div>
             </div>
@@ -58,7 +61,7 @@
         <h6 style="color: white" class="nombreUser">Nombre Apellido</h6>
         <a href=""><img src="../src/img/perfil.png" class="fotoPerfil" width="60px" height="60px"></a>
 
-</header>
+    </header>
 
     <div class="wrapper fadeInDown">
         <div id="formContent">
@@ -77,11 +80,11 @@
           <form>
             
             
-            <center><button class="btn Pbotones">Añadir Usuario</button></center>
+            <center><button class="btn Pbotones"><a href="A_addUsuario.html" style="color: white;">Añadir usuario</a></button></center>
            <!-- <input type="button" class="fadeIn fourth" value="Añadir usuario" onclick="location.href='A_Añadir usuario.php';" /> -->
             <br>
             <br>
-            <center><button class="btn Pbotones">Eliminar Usuario</button></center>
+            <center><button class="btn Pbotones"><a href="P_AeliminarU.html" style="color: white;">Eliminar Usuario</a></button></center>
            <!-- <input type="button" class="fadeIn fourth" value="Eliminar usuario" onclick="location.href='P_AeliminarU.php';" /> -->
             
           </form>
