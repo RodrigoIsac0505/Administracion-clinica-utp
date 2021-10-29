@@ -91,7 +91,7 @@
       </table>
     </div>
 
-    <button type="button" class="btn" onclick="window.location.href='P_PregistroM.php'">Registro Medico</button>
+   
     <footer class="navbar navbar-expand-md sticky-top piePagina" style="background-color: #68086c;">
         <div class="pgIMG">
             <img src=../src/img/logoUTP.png width="100px" height="100px">

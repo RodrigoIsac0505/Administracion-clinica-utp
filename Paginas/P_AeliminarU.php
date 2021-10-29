@@ -76,7 +76,7 @@
             <td>J@correo.com</td>
             <td>8-334-6231</td>
             <td>2</td>
-            <td><button>Eliminar</button></td>
+            <td><button class="btn btn-dark">Eliminar</button></td>
          
           </tr>
           <tr>
@@ -85,7 +85,7 @@
             <td>Ana@correo.com</td>
             <td>8-214-6221</td>
             <td>1</td>
-            <td><button>Eliminar</button></td>
+            <td><button class="btn btn-dark">Eliminar</button></td>
           </tr>
 
             <tr>
@@ -94,7 +94,7 @@
             <td>pepe@correo.com</td>
             <td>8-143-6121</td>
             <td>3</td>
-            <td><button>Eliminar</button></td>
+            <td><button class="btn btn-dark">Eliminar</button></td>
           </tr>
 
           <tr>
@@ -103,7 +103,7 @@
             <td>Paola@correo.com</td>
             <td>8-564-1421</td>
             <td>1</td>
-            <td><button>Eliminar</button></td>
+            <td><button class="btn btn-dark" >Eliminar</button></td>
           </tr>
 
             <tr>
@@ -112,7 +112,7 @@
             <td>L@correo.com</td>
             <td>8-143-6121</td>
             <td>3</td>
-            <td><button>Eliminar</button></td>
+            <td><button class="btn btn-dark">Eliminar</button></td>
           </tr>
 
           <tr>
@@ -121,7 +121,7 @@
             <td>Laura@correo.com</td>
             <td>2-714-3221</td>
             <td>1</td>
-            <td><button>Eliminar</button></td>
+            <td><button class=" btn btn-dark" >Eliminar</button></td>
           </tr>
 
             <tr>
@@ -130,7 +130,7 @@
             <td>Jay@correo.com</td>
             <td>5-233-3121</td>
             <td>3</td>
-            <td><button>Eliminar</button></td>
+            <td><button class="btn btn-dark">Eliminar</button></td>
           </tr>
 
           <tr>
@@ -139,7 +139,7 @@
             <td>Psantos@correo.com</td>
             <td>8-354-1221</td>
             <td>1</td>
-            <td><button>Eliminar</button></td>
+            <td><button class="btn btn-dark">Eliminar</button></td>
           </tr>
 
             <tr>
@@ -148,7 +148,7 @@
             <td>miguel@correo.com</td>
             <td>8-743-1121</td>
             <td>2</td>
-            <td><button>Eliminar</button></td>
+            <td><button class="btn btn-dark">Eliminar</button></td>
           </tr>
           
           

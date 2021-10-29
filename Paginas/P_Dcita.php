@@ -155,7 +155,6 @@
       </table>
     </div>
 
-    <button type="button" class="btn" onclick="window.location.href='P_DregistrosM.php'">Registros Medicos</button>
 
     <footer class="navbar navbar-expand-md sticky-top piePagina" style="background-color: #68086c;">
         <div class="pgIMG">

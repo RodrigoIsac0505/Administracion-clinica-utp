@@ -67,7 +67,7 @@
                     <option>Super option 3</option>
                 </select>
 
-                <button ID="submit">Buscar</button>
+                <button class="btn Pbotones">Buscar</button>
             </div>
         </div>
       
@@ -109,7 +109,7 @@
       </table>
     </div>
 
-    <button type="button" class="btn" onclick="window.location.href='P_SsolicitudesS.php'">Solicitudes De Servicios</button>
+    
 
     <footer class="navbar navbar-expand-md sticky-top piePagina" style="background-color: #68086c;">
         <div class="pgIMG">
